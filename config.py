@@ -1,0 +1,29 @@
+
+SECRET_KEY = "21xwsqdqwqw12;a31dsasasa"
+#数据库配置信息
+HOSTNAME="127.0.0.1"
+PORT=3306
+USERNAME=""
+PASSWORD=""
+DATABASE = ''
+DB_URI=f"mysql+pymysql://{USERNAME}:{PASSWORD}@{HOSTNAME}:{PORT}/{DATABASE}?charset=utf8mb4"
+SQLALCHEMY_DATABASE_URI = DB_URI
+
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+
+
+
+
+#邮箱配置
+MAIL_SERVER = "smtp.qq.com"
+MAIL_PORT = 587#465端口不行可以换587
+MAIL_USE_TLS = True
+#MAIL_DEBUG = False
+MAIL_USERNAME = ""
+MAIL_PASSWORD = ""
+MAIL_DEFAULT_SENDER = ""
+
+
+
+
+

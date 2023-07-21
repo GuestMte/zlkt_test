@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>控制语句</title>
+</head>
+<body>
+{% if age>18 %}
+<div>您已成年</div>
+{% elif age<18 %}
+<div>您未成年</div>
+{% else %}
+<div>您刚成年</div>
+{% endif %}
+<table>
+<tr>
+    <th>序号</th>
+    <th>书名</th>
+    <th>作者</th>
+    <th>价格</th>
+</tr>
+<tbody>
+{% for book in books %}
+    <tr>
+    <td>{{ loop.index }}</td>
+{#   loop函数显示序号     #}
+<td>{{ book.name }}</td>
+    <td>{{ book.author }}</td>
+    <td>{{ book.age }}</td>
+    </tr>
+    {% else %}
+    <td>无数据</td>
+{#  没有数据时，显示else后面语句  #}
+{% endfor %}
+</tbody>
+</table>
+
+
+</body>
+</html>

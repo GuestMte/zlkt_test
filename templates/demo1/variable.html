@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量使用</title>
+</head>
+<body>
+<h1>我的兴趣爱好是：{{ hobby1 }}</h1>
+<h1>person的姓名是:{{ person.name }},年龄是{{ person["age"] }}</h1>
+<p>user的姓名是:{{ user["username"] }},user的邮箱是{{ user.email }}</p>
+{#
+person.name与user["username"]两种方式都能取到值，不过两种取值方式的顺序不一样，一个是先访问 键 再访问对象属性，如果都没有就返回空，另一个访问方式
+与之相反
+
+
+
+#}
+</body>
+</html>
